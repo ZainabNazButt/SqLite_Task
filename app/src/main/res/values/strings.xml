@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DB_practise</string>
+    <string name="StudentName">StudentName</string>
+    <string name="Age">Age</string>
+    <string name="ActiveCustomer">ActiveCustomer</string>
+    <string name="ButtonViewAll">ButtonViewAll</string>
+    <string name="Add">Add</string>
+</resources>
