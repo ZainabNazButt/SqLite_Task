@@ -55,7 +55,6 @@ public class DbHelper extends SQLiteOpenHelper {
     }
 
     public ArrayList<StudentModel> getAllStudents() {
-
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursorCourses = db.rawQuery("SELECT * FROM " + STUDENT_TABLE, null);

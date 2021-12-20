@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DB_practise">
         <activity
+            android:name=".Recycler_view"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

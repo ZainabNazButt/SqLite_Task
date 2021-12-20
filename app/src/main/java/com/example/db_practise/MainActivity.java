@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.Toast;
+import android.content.Intent;
 
 import java.util.List;
 
@@ -50,10 +51,15 @@ public class MainActivity extends AppCompatActivity {
         buttonViewAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DbHelper dbHelper = new DbHelper(MainActivity.this);
+                Intent intent;
+                intent = new Intent(MainActivity.this, Recycler_view.class);
+                startActivity(intent);
+
+
+                       /* DbHelper dbHelper = new DbHelper(MainActivity.this);
                 List<StudentModel> list = dbHelper.getAllStudents();
                 ArrayAdapter arrayAdapter = new ArrayAdapter<StudentModel>(MainActivity.this, android.R.layout.simple_list_item_1,list);
-                listViewStudent.setAdapter(arrayAdapter);
+                listViewStudent.setAdapter(arrayAdapter);*/
 
 
 
