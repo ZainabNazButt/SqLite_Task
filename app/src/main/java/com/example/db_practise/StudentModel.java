@@ -1,5 +1,4 @@
 package com.example.db_practise;
-
 public class StudentModel {
     private String name;
     private int age;
@@ -10,8 +9,6 @@ public class StudentModel {
         this.age = age;
         this.isActive = isActive;
     }
-
-
 
     public String getName() {
         return name;
