@@ -45,6 +45,7 @@ public class DbHelper extends SQLiteOpenHelper {
         cv.put(STUDENT_NAME, STUDENTModel.getName());
         cv.put(STUDENT_AGE, STUDENTModel.getAge());
         cv.put(ACTIVE_STUDENT, STUDENTModel.isActive());
+        cv.put(STUDENT_ID, STUDENTModel.isActive());
         db.insert(STUDENT_TABLE, null, cv);
         db.close();
 

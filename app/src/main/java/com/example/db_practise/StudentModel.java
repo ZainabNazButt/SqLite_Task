@@ -3,11 +3,12 @@ public class StudentModel {
     private String name;
     private int age;
     private boolean isActive;
-    private int id;
+    private static int id;
     public StudentModel(String name, int age, boolean isActive) {
         this.name = name;
         this.age = age;
         this.isActive = isActive;
+        this.id=id;
     }
 
     public String getName() {
@@ -44,6 +45,7 @@ public class StudentModel {
 
     @Override
     public String toString() {
+        id=id+1;
         return "StudentModel{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
